@@ -1,0 +1,17 @@
+# Python
+**/__pycache__/
+**/.venv/
+*.py[cod]
+*.db
+
+# ML artifacts
+backend/models/
+backend/artifacts/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Env
+.env
+.env.local

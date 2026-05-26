@@ -1,0 +1,95 @@
+:root {
+  --bg: #07111f;
+  --bg-2: #0c1a30;
+  --card: rgba(12, 24, 44, 0.88);
+  --text: #e8eef8;
+  --muted: #9fb0c9;
+  --border: rgba(148, 163, 184, 0.18);
+  --accent: #38bdf8;
+  --accent-2: #818cf8;
+  --danger: #f87171;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at 90% 0%, rgba(129, 140, 248, 0.14), transparent 24%),
+    linear-gradient(180deg, var(--bg), #040a14 70%);
+}
+
+h1,
+h2,
+h3,
+p {
+  font-weight: inherit;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1.1rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.skeleton {
+  color: var(--muted);
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 0.85rem;
+  padding: 0.8rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  color: #041018;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 0.85rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  background: rgba(127, 29, 29, 0.22);
+  color: #fecaca;
+}
+
+.alert.success {
+  border-color: rgba(134, 239, 172, 0.35);
+  background: rgba(22, 101, 52, 0.22);
+  color: #bbf7d0;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+  color: var(--accent-2);
+}

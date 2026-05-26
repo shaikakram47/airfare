@@ -1,0 +1,42 @@
+.results-empty h3 {
+  margin-top: 0;
+}
+
+.results-empty p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.results-error {
+  color: #fecaca !important;
+  line-height: 1.5;
+}
+
+.results-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 280px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.fare-value {
+  margin: 0.35rem 0;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.route-line {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
